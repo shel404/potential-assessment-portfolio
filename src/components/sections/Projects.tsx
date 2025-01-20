@@ -62,15 +62,15 @@ const Projects: FC = () => {
       />
 
       {/* Category Filters */}
-      <div className="flex justify-center gap-4 mb-12">
+      <div className="flex flex-wrap justify-center gap-4 mb-12">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`px-6 py-2 rounded-md transition-colors ${
+            className={`px-4 sm:px-6 py-2 rounded-md transition-colors text-sm sm:text-base ${
               activeCategory === category
                 ? "bg-orange-500 text-white"
-                : "bg-gray-100 text-black-950 hover:bg-gray-200"
+                : "bg-gray-100  text-black-950  hover:bg-gray-200"
             }`}
           >
             {category}

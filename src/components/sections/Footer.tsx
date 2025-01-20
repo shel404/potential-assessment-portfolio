@@ -36,13 +36,13 @@ const Footer: FC = () => {
         </div>
 
         {/* Navigation */}
-        <nav className="mb-8">
-          <ul className="flex gap-8">
+        <nav className="mb-8 px-4">
+          <ul className="flex flex-wrap justify-center gap-4 sm:gap-8">
             {navigation.map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase().replace(" ", "-")}`}
-                  className="text-black dark:text-white hover:text-orange-500 transition-colors"
+                  className="text-black dark:text-white hover:text-orange-500 transition-colors text-sm sm:text-base"
                 >
                   {item}
                 </a>

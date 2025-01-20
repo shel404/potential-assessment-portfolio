@@ -20,18 +20,21 @@ const Contact: FC = () => {
           lectus netus in. Aliquet donec morbi convallis pretium"
       />
 
-      <form onSubmit={handleSubmit} className="flex gap-4 max-w-3xl mx-auto">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col sm:flex-row gap-4 max-w-3xl mx-auto px-4"
+      >
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter Your Email"
-          className="flex-1 px-6 py-4 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:border-orange-500 text-black-900"
+          className="flex-1 px-6 py-4 rounded-lg bg-gray-50  border border-gray-200 dark:border-black-600 focus:outline-none focus:border-orange-500 text-black-900 dark:text-white"
           required
         />
         <button
           type="submit"
-          className="px-8 py-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors"
+          className="w-full sm:w-auto px-8 py-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors"
         >
           Contact Me
         </button>

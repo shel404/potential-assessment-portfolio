@@ -83,7 +83,7 @@ const Testimonials: FC = () => {
   return (
     <section
       id="testimonials"
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 overflow-clip"
     >
       <SectionHeader
         title="Testimonials"
@@ -91,9 +91,7 @@ const Testimonials: FC = () => {
       />
 
       <div className="relative mt-24">
-        <div className="relative h-[350px]">
-          {" "}
-          {/* Fixed height container */}
+        <div className="relative h-[450px] sm:h-[350px]">
           <AnimatePresence initial={false} mode="sync" custom={direction}>
             <motion.div
               key={activeSlide}
@@ -108,20 +106,22 @@ const Testimonials: FC = () => {
               }}
               className="bg-gray-50 p-12 rounded-lg max-w-4xl mx-auto left-0 right-0 absolute w-full"
             >
-              <div className="flex items-start gap-8">
-                <img
-                  src={testimonials[activeSlide].image}
-                  alt={testimonials[activeSlide].name}
-                  className="w-24 h-24 rounded-full object-cover"
-                />
-                <div>
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 sm:gap-4">
+                <div className="w-full sm:w-1/3 flex flex-col items-center sm:items-start">
+                  <img
+                    src={testimonials[activeSlide].image}
+                    alt={testimonials[activeSlide].name}
+                    className="w-24 h-24 sm:w-48 sm:h-48 rounded-full object-contain mb-6 sm:mb-0"
+                  />
+                </div>
+                <div className="w-full ">
                   <div className="mb-6">
                     <p className="text-gray-700 text-lg relative">
                       <span className="absolute -left-2 -top-6 text-orange-500 text-5xl leading-[0] italic rotate-180">
                         "
                       </span>
                       {testimonials[activeSlide].content}
-                      <span className="absolute right-8 bottom-6 text-orange-500 text-5xl leading-[0] italic  rotate-180">
+                      <span className="align-bottom text-orange-500 text-5xl leading-[0] italic">
                         "
                       </span>
                     </p>
@@ -139,7 +139,7 @@ const Testimonials: FC = () => {
         </div>
 
         {/* Navigation Dots */}
-        <div className="flex justify-center gap-2">
+        <div className="hidden sm:flex justify-center gap-2 ">
           {testimonials.map((_, index) => (
             <button
               key={index}

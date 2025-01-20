@@ -2,6 +2,7 @@ import { FC, useState, useEffect } from "react";
 
 const Navigation: FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
     { href: "#home", label: "Home" },
@@ -36,17 +37,40 @@ const Navigation: FC = () => {
             <img
               src="/src/assets/images/logo.png"
               alt="Mumair Logo"
-              className="h-12 block dark:hidden"
+              className="h-10 sm:h-12 block dark:hidden"
             />
             <img
               src="/src/assets/images/logo-dark.png"
               alt="Mumair Logo"
-              className="h-12 hidden dark:block"
+              className="h-10 sm:h-12 hidden dark:block"
             />
           </a>
         </div>
 
-        <div className="flex items-center gap-8">
+        {/* Mobile menu button */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="lg:hidden text-black dark:text-white"
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            {isMenuOpen ? (
+              <path d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
+
+        {/* Desktop menu */}
+        <div className="hidden lg:flex items-center gap-8">
           {navItems.map(({ href, label }) => (
             <a
               key={href}
@@ -57,6 +81,27 @@ const Navigation: FC = () => {
             </a>
           ))}
           <button className="btn-primary">Download CV</button>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={`lg:hidden ${
+          isMenuOpen ? "block" : "hidden"
+        } bg-white dark:bg-black-800 shadow-lg`}
+      >
+        <div className="px-4 py-2 space-y-1">
+          {navItems.map(({ href, label }) => (
+            <a
+              key={href}
+              href={href}
+              onClick={() => setIsMenuOpen(false)}
+              className="block py-2 text-black dark:text-white hover:text-orange-500 dark:hover:text-orange-500 transition-colors"
+            >
+              {label}
+            </a>
+          ))}
+          <button className="btn-primary w-full my-2">Download CV</button>
         </div>
       </div>
     </nav>

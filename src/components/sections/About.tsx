@@ -15,19 +15,19 @@ const About: FC = () => {
       id="about"
       className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20"
     >
-      <div className="flex items-center gap-20">
-        <div className="w-1/2">
+      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
+        <div className="w-full lg:w-1/2">
           <img
             src="/src/assets/images/about-me.png"
             alt="About Me"
-            className="w-full rounded-full"
+            className="w-full max-w-[400px] mx-auto lg:max-w-none rounded-full"
           />
         </div>
-        <div className="w-1/2">
+        <div className="w-full lg:w-1/2">
           <SectionHeader
             title="About Me"
             description="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra"
-            alignment="left"
+            alignment="auto"
           />
           {skills.map((skill) => (
             <SkillBar key={skill.label} {...skill} />
