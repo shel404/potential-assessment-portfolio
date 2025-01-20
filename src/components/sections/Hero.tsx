@@ -26,7 +26,9 @@ const Hero: FC = () => {
             nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis
             tempus pharetra
           </p>
-          <button className="btn-primary px-8 py-3">Hire Me</button>
+          <a href="#contact" className="btn-primary no-underline px-8 py-3">
+            Hire Me
+          </a>
         </div>
 
         {/* Right Content - Profile Image */}

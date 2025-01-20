@@ -25,7 +25,7 @@ const Navigation: FC = () => {
           <a
             key={href}
             href={href}
-            className="text-black-800 hover:text-orange-500"
+            className="text-black-black hover:text-orange-500"
           >
             {label}
           </a>
