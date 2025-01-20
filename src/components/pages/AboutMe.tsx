@@ -43,7 +43,7 @@ const AboutMe: FC = () => {
           />
         </div>
         <div className="w-1/2">
-          <h2 className="text-4xl font-bold mb-6">About Me</h2>
+          <h2 className="text-5xl font-semibold mb-6">About Me</h2>
           <p className="text-black mb-10">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
             nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis

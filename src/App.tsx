@@ -1,6 +1,7 @@
 import { FC } from "react";
 import LandingPage from "./components/pages/LandingPage";
 import AboutMe from "./components/pages/AboutMe";
+import Services from "./components/pages/Services";
 
 const App: FC = () => {
   return (
@@ -45,6 +46,7 @@ const App: FC = () => {
 
       <LandingPage />
       <AboutMe />
+      <Services />
     </div>
   );
 };
