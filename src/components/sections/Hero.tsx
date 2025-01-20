@@ -8,7 +8,7 @@ import {
 
 const Hero: FC = () => {
   return (
-    <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <main id="home" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div className="flex items-center justify-between">
         {/* Left Content */}
         <div className="max-w-xl">
@@ -48,7 +48,7 @@ const Hero: FC = () => {
                   <a
                     key={social}
                     href="#"
-                    className="text-black-800 dark:text-white hover:text-orange-500 transition-colors"
+                    className="text-black-800 dark:text-white hover:text-orange-500 dark:hover:text-orange-500 transition-colors"
                   >
                     {social === "facebook" && <FacebookIcon />}
                     {social === "twitter" && <TwitterIcon />}

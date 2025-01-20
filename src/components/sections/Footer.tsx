@@ -21,16 +21,18 @@ const Footer: FC = () => {
       <div className="flex flex-col items-center gap-6">
         {/* Logo */}
         <div className="flex items-center gap-2 mb-8">
-          <img
-            src="/src/assets/images/logo.png"
-            alt="Mumair"
-            className="h-12 block dark:hidden"
-          />
-          <img
-            src="/src/assets/images/logo-dark.png"
-            alt="Mumair"
-            className="h-12 hidden dark:block"
-          />
+          <a href="#home">
+            <img
+              src="/src/assets/images/logo.png"
+              alt="Mumair"
+              className="h-12 block dark:hidden"
+            />
+            <img
+              src="/src/assets/images/logo-dark.png"
+              alt="Mumair"
+              className="h-12 hidden dark:block"
+            />
+          </a>
         </div>
 
         {/* Navigation */}
@@ -55,7 +57,7 @@ const Footer: FC = () => {
             <a
               key={social}
               href="#"
-              className="text-black dark:text-white hover:text-orange-500 transition-colors"
+              className="text-black dark:text-white hover:text-orange-500 dark:hover:text-orange-500 transition-colors"
             >
               {social === "facebook" && <FacebookIcon />}
               {social === "twitter" && <TwitterIcon />}

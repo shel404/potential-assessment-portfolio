@@ -32,16 +32,18 @@ const Navigation: FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <div className="flex items-center">
-          <img
-            src="/src/assets/images/logo.png"
-            alt="Mumair Logo"
-            className="h-12 block dark:hidden"
-          />
-          <img
-            src="/src/assets/images/logo-dark.png"
-            alt="Mumair Logo"
-            className="h-12 hidden dark:block"
-          />
+          <a href="#home">
+            <img
+              src="/src/assets/images/logo.png"
+              alt="Mumair Logo"
+              className="h-12 block dark:hidden"
+            />
+            <img
+              src="/src/assets/images/logo-dark.png"
+              alt="Mumair Logo"
+              className="h-12 hidden dark:block"
+            />
+          </a>
         </div>
 
         <div className="flex items-center gap-8">
@@ -49,7 +51,7 @@ const Navigation: FC = () => {
             <a
               key={href}
               href={href}
-              className="text-black dark:text-white hover:text-orange-500 transition-colors"
+              className="text-black dark:text-white hover:text-orange-500 dark:hover:text-orange-500 transition-colors"
             >
               {label}
             </a>
