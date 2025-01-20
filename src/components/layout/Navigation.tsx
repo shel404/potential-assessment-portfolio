@@ -31,7 +31,7 @@ const Navigation: FC = () => {
             : "bg-white dark:bg-black-800"
         }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 h-20 flex items-center justify-between">
         <div className="flex items-center">
           <a href="#home">
             <img
@@ -50,7 +50,7 @@ const Navigation: FC = () => {
         {/* Mobile menu button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden text-black dark:text-white"
+          className="xl:hidden text-black dark:text-white"
         >
           <svg
             className="w-6 h-6"
@@ -70,7 +70,7 @@ const Navigation: FC = () => {
         </button>
 
         {/* Desktop menu */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden xl:flex items-center gap-8">
           {navItems.map(({ href, label }) => (
             <a
               key={href}
@@ -86,7 +86,7 @@ const Navigation: FC = () => {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden ${
+        className={`xl:hidden ${
           isMenuOpen ? "block" : "hidden"
         } bg-white dark:bg-black-800 shadow-lg`}
       >
