@@ -5,7 +5,7 @@ import SectionHeader from "../common/SectionHeader";
 const ServiceCard: FC<ServiceCardProps> = ({ iconSrc, title, description }) => (
   <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
     <div className="mb-6">
-      <img src={iconSrc} alt={title} className="w-16 h-16" />
+      <img src={iconSrc} alt={title} className="w-auto h-16" />
     </div>
     <h3 className="text-2xl font-semibold mb-4">{title}</h3>
     <p className="text-black-600">{description}</p>
