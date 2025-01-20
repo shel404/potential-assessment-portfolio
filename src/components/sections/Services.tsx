@@ -1,10 +1,6 @@
 import { FC } from "react";
-
-interface ServiceCardProps {
-  iconSrc: string;
-  title: string;
-  description: string;
-}
+import { ServiceCardProps } from "../../types";
+import SectionHeader from "../common/SectionHeader";
 
 const ServiceCard: FC<ServiceCardProps> = ({ iconSrc, title, description }) => (
   <div className="bg-gray-50 p-8 rounded-lg hover:shadow-lg transition-shadow">
@@ -49,15 +45,11 @@ const Services: FC = () => {
       id="services"
       className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20"
     >
-      <div className="text-center mb-16">
-        <h2 className="text-5xl font-semibold mb-6">Services</h2>
-        <p className="text-black max-w-3xl mx-auto">
-          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
-          lectus netus in. Aliquet donec morbi convallis pretium
-        </p>
-      </div>
-
-      <div className="grid grid-cols-4 gap-8">
+      <SectionHeader
+        title="Services"
+        description="Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium"
+      />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {services.map((service) => (
           <ServiceCard key={service.title} {...service} />
         ))}

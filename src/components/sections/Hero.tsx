@@ -6,7 +6,7 @@ import {
   LinkedInIcon,
 } from "../icons/SocialIcons";
 
-const LandingPage: FC = () => {
+const Hero: FC = () => {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div className="flex items-center justify-between">
@@ -26,9 +26,7 @@ const LandingPage: FC = () => {
             nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis
             tempus pharetra
           </p>
-          <button className="bg-orange-500 text-white px-8 py-3 rounded-md hover:bg-orange-600">
-            Hire Me
-          </button>
+          <button className="btn-primary px-8 py-3">Hire Me</button>
         </div>
 
         {/* Right Content - Profile Image */}
@@ -73,4 +71,4 @@ const LandingPage: FC = () => {
   );
 };
 
-export default LandingPage;
+export default Hero;
