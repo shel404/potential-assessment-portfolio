@@ -36,7 +36,7 @@ const Hero: FC = () => {
         {/* Right Content - Profile Image */}
         <div className="relative">
           <img
-            src="/src/assets/images/profile.png"
+            src="/images/profile.png"
             alt="Profile"
             className="w-full max-w-[500px] h-auto"
           />

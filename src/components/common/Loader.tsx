@@ -5,7 +5,7 @@ const Loader: FC = () => {
     <div className="fixed inset-0 bg-white dark:bg-black-800 z-50 flex flex-col items-center justify-center gap-8 transition-opacity duration-300">
       <div className="relative">
         <img
-          src="/src/assets/images/logo-symbol.png"
+          src="/images/logo-symbol.png"
           alt="Profile"
           className="w-20 h-20 rounded-full"
         />

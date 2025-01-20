@@ -28,19 +28,19 @@ const Projects: FC = () => {
 
   const projects: Project[] = [
     {
-      image: "/src/assets/images/projects/aircalling.png",
+      image: "/images/projects/aircalling.png",
       category: "Web Design",
       title: "AirCalling Landing Page Design",
       type: "Web Design",
     },
     {
-      image: "/src/assets/images/projects/business.png",
+      image: "/images/projects/business.png",
       category: "Web Design",
       title: "Business Landing Page Design",
       type: "Web Design",
     },
     {
-      image: "/src/assets/images/projects/ecom.png",
+      image: "/images/projects/ecom.png",
       category: "Web Design",
       title: "Ecom Web Page Design",
       type: "Web Design",

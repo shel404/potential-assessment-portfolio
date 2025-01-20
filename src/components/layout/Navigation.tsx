@@ -35,12 +35,12 @@ const Navigation: FC = () => {
         <div className="flex items-center">
           <a href="#home">
             <img
-              src="/src/assets/images/logo.png"
+              src="/images/logo.png"
               alt="Mumair Logo"
               className="h-10 sm:h-12 block dark:hidden"
             />
             <img
-              src="/src/assets/images/logo-dark.png"
+              src="/images/logo-dark.png"
               alt="Mumair Logo"
               className="h-10 sm:h-12 hidden dark:block"
             />

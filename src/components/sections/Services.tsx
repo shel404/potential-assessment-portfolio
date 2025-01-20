@@ -18,25 +18,25 @@ const ServiceCard: FC<ServiceCardProps> = ({ iconSrc, title, description }) => (
 const Services: FC = () => {
   const services = [
     {
-      iconSrc: "/src/assets/icons/ui-ux-icon.png",
+      iconSrc: "/icons/ui-ux-icon.png",
       title: "UI/UX",
       description:
         "Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum",
     },
     {
-      iconSrc: "/src/assets/icons/web-design-icon.png",
+      iconSrc: "/icons/web-design-icon.png",
       title: "Web Design",
       description:
         "Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum",
     },
     {
-      iconSrc: "/src/assets/icons/app-design-icon.png",
+      iconSrc: "/icons/app-design-icon.png",
       title: "App Design",
       description:
         "Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum",
     },
     {
-      iconSrc: "/src/assets/icons/graphic-design-icon.png",
+      iconSrc: "/icons/graphic-design-icon.png",
       title: "Graphic Design",
       description:
         "Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum",

@@ -17,7 +17,7 @@ const Testimonials: FC = () => {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      image: "/src/assets/images/testimonials/testimonial1.png",
+      image: "/images/testimonials/testimonial1.png",
       content:
         "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.",
       name: "Name",
@@ -25,7 +25,7 @@ const Testimonials: FC = () => {
     },
     {
       id: 2,
-      image: "/src/assets/images/testimonials/testimonial2.png",
+      image: "/images/testimonials/testimonial2.png",
       content:
         "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.",
       name: "Name",
@@ -33,7 +33,7 @@ const Testimonials: FC = () => {
     },
     {
       id: 3,
-      image: "/src/assets/images/testimonials/testimonial1.png",
+      image: "/images/testimonials/testimonial1.png",
       content:
         "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.",
       name: "Name",
@@ -41,7 +41,7 @@ const Testimonials: FC = () => {
     },
     {
       id: 4,
-      image: "/src/assets/images/testimonials/testimonial2.png",
+      image: "/images/testimonials/testimonial2.png",
       content:
         "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.",
       name: "Name",

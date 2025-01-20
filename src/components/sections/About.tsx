@@ -18,7 +18,7 @@ const About: FC = () => {
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
         <div className="w-full lg:w-1/2">
           <img
-            src="/src/assets/images/about-me.png"
+            src="/images/about-me.png"
             alt="About Me"
             className="w-full max-w-[400px] mx-auto lg:max-w-none rounded-full"
           />
