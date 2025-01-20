@@ -1,0 +1,26 @@
+@import '@fontsource/poppins/300.css';
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-black-800 hover:text-orange-500 transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-orange-500 text-white px-6 py-2 rounded-md hover:bg-orange-600 transition-colors;
+  }
+}
