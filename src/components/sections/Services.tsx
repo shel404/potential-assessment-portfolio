@@ -7,7 +7,7 @@ const ServiceCard: FC<ServiceCardProps> = ({ iconSrc, title, description }) => (
     <div className="mb-6">
       <img src={iconSrc} alt={title} className="w-auto h-16" />
     </div>
-    <h3 className="text-2xl font-semibold mb-4">{title}</h3>
+    <h3 className="text-2xl font-semibold mb-4 text-black-900">{title}</h3>
     <p className="text-black-600">{description}</p>
   </div>
 );

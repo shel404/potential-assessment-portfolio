@@ -26,7 +26,7 @@ const Contact: FC = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter Your Email"
-          className="flex-1 px-6 py-4 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:border-orange-500"
+          className="flex-1 px-6 py-4 rounded-lg bg-gray-50 border border-gray-200 focus:outline-none focus:border-orange-500 text-black-900"
           required
         />
         <button

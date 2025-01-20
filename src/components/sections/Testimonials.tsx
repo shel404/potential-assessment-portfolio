@@ -126,7 +126,7 @@ const Testimonials: FC = () => {
                       </span>
                     </p>
                   </div>
-                  <h4 className="text-xl font-semibold">
+                  <h4 className="text-xl font-semibold text-black-950">
                     {testimonials[activeSlide].name}
                   </h4>
                   <p className="text-gray-600">

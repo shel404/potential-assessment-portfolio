@@ -70,7 +70,7 @@ const Projects: FC = () => {
             className={`px-6 py-2 rounded-md transition-colors ${
               activeCategory === category
                 ? "bg-orange-500 text-white"
-                : "bg-gray-100 text-black hover:bg-gray-200"
+                : "bg-gray-100 text-black-950 hover:bg-gray-200"
             }`}
           >
             {category}
@@ -92,9 +92,7 @@ const Projects: FC = () => {
             <span className="text-orange-500 font-medium block mb-2">
               {project.type}
             </span>
-            <h3 className="text-2xl font-semibold text-black">
-              {project.title}
-            </h3>
+            <h3 className="text-2xl  text-black">{project.title}</h3>
           </div>
         ))}
       </div>

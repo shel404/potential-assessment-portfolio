@@ -17,14 +17,19 @@ const Footer: FC = () => {
   ];
 
   return (
-    <footer className="bg-gray-50 pt-20 ">
+    <footer className="bg-gray-50 dark:bg-black-800 pt-20 transition-colors duration-200">
       <div className="flex flex-col items-center gap-6">
         {/* Logo */}
         <div className="flex items-center gap-2 mb-8">
           <img
             src="/src/assets/images/logo.png"
             alt="Mumair"
-            className="h-12"
+            className="h-12 block dark:hidden"
+          />
+          <img
+            src="/src/assets/images/logo-dark.png"
+            alt="Mumair"
+            className="h-12 hidden dark:block"
           />
         </div>
 
@@ -35,7 +40,7 @@ const Footer: FC = () => {
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase().replace(" ", "-")}`}
-                  className="text-black hover:text-orange-500 transition-colors"
+                  className="text-black dark:text-white hover:text-orange-500 transition-colors"
                 >
                   {item}
                 </a>
@@ -46,33 +51,21 @@ const Footer: FC = () => {
 
         {/* Social Icons */}
         <div className="flex gap-6 mb-8">
-          <a
-            href="#"
-            className="text-black hover:text-orange-500 transition-colors"
-          >
-            <FacebookIcon />
-          </a>
-          <a
-            href="#"
-            className="text-black hover:text-orange-500 transition-colors"
-          >
-            <TwitterIcon />
-          </a>
-          <a
-            href="#"
-            className="text-black hover:text-orange-500 transition-colors"
-          >
-            <InstagramIcon />
-          </a>
-          <a
-            href="#"
-            className="text-black hover:text-orange-500 transition-colors"
-          >
-            <LinkedInIcon />
-          </a>
+          {["facebook", "twitter", "instagram", "linkedin"].map((social) => (
+            <a
+              key={social}
+              href="#"
+              className="text-black dark:text-white hover:text-orange-500 transition-colors"
+            >
+              {social === "facebook" && <FacebookIcon />}
+              {social === "twitter" && <TwitterIcon />}
+              {social === "instagram" && <InstagramIcon />}
+              {social === "linkedin" && <LinkedInIcon />}
+            </a>
+          ))}
         </div>
       </div>
-      <div className="bg-black-700 p-4">
+      <div className="bg-black-700 dark:bg-black-900 p-4">
         <p className="text-gray-300 text-center font-bold">
           © 2023 <span className="text-orange-500">Mumair</span> All Rights
           Reserved , Inc.

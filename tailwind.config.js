@@ -3,6 +3,7 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -30,8 +31,9 @@ export default {
           500: "#818181",
           600: "#676767",
           700: "#545454",
-          800: "#383838",
+          800: "#1e1e1e",
           900: "#1a1a1a",
+          950: "#000000",
         },
         gray: {
           50: "#f8f8f8",
